@@ -20,4 +20,5 @@ COPY . .
 EXPOSE 8080
 
 # Start Streamlit server dynamically using the PORT environment variable (required by Cloud Run)
-ENTRYPOINT ["sh", "-c", "streamlit run app.py --server.port=${PORT} --server.address=0.0.0.0"]
+ENTRYPOINT ["sh", "-c", "streamlit run app.py --server.port=${PORT}"]
+
